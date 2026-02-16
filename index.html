@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>わたしのTODO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>📝 わたしのTODO</h1>
+        <p>今日やることを、ひとつずつ片付けよう。</p>
+      </header>
+
+      <form id="todo-form" class="todo-form" aria-label="タスク追加フォーム">
+        <label for="todo-input" class="visually-hidden">新しいタスク</label>
+        <input id="todo-input" name="todo" type="text" placeholder="タスクを入力..." maxlength="120" required />
+        <button type="submit">追加</button>
+      </form>
+
+      <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
+
+      <footer class="app__footer">
+        <span id="todo-count">0件のタスク</span>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
